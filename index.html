@@ -1,0 +1,89 @@
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Сайт-Рулетка с кс скинами</title>
+</head>
+<body>
+  <div class="roulette-container">
+    <div class="roulette-wheel"></div>
+    <button class="spin-button">Крутить</button>
+    <div class="result-display">
+      <img src="default-skin.jpg" alt="Скин">
+      <div class="skin-info">
+        <h2>Название скина</h2>
+        <p>Описание скина...</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+CSS (styles.css):
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.roulette-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.roulette-wheel {
+  width: 200px;
+  height: 200px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.spin-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.spin-button:hover {
+  background-color: #45a049;
+}
+
+.result-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.result-display img {
+  max-width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.skin-info h2 {
+  margin-bottom: 10px;
+}
+
+.skin-info p {
+  color: #666;
+}
+
